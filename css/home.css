@@ -1,0 +1,28 @@
+#screen {
+	position: relative;
+	width: 50%;
+	margin: 0 auto;
+	height: 500px;
+}
+
+#color {
+	position: absolute;
+	top: 0px;
+ 	left: 0px; 
+	width: 500px;
+	height:500px;
+}
+
+#lamp {
+	position: absolute;
+	top: 0px;
+ 	left: 0px; 
+	width: 500px;
+	height:500px;
+}
+
+#hint{
+	text-align: center;
+	color: #424242;
+	font-size: 14px;
+}

@@ -1,0 +1,23 @@
+p{
+	color: black;
+}
+
+button {
+	float:right;
+}
+
+#Privat{
+	background-color: #05a828;
+}
+
+#Pro{
+	background-color: #cedb18;
+}
+
+#Business{
+	background-color: #dbab18;
+}
+
+#Enterprise{
+	background-color: #db3c18;
+}

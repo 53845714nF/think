@@ -1,0 +1,36 @@
+body { 
+	text-align: center;
+	margin: 0px;
+}
+
+h1 {
+	margin-top: 0em;
+	background: #58D3F7;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	font-family: Courier;
+	font-size: 34px;
+	color: white;
+}
+
+#website {
+	margin-left: auto;
+	margin-right: auto;
+	width: 980px;
+	height: auto;
+}
+
+#website h3 {
+	text-align: center;
+	padding-top: 10px;
+}
+
+#website h2{
+	text-align: center;
+}
+
+#website p {
+	text-align: center;
+	color: #424242;
+}
