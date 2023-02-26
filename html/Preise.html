@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Preise</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../css/menu.css">
+        <link rel="stylesheet" type="text/css" href="../css/Preis.css">
+        <script language="javascript" type="text/javascript" src="../js/Preis.js"></script>
+    </head>
+    <body>
+
+        <h1>THINK</h1>
+        
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="Referenzen.html">Referenzen</a></li>
+            <li><a href="Angebot.html">Angebot</a></li>
+            <li><a href="Preise.html">Preise</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+        </ul>
+
+        <div id="website">
+            <h2>Preise</h2>
+            <div id="Privat">
+                <h2>Privat</h2>
+                <p>Seitenanzahl (5€): <input type="text" size="3" id="Privat_Seiten" value = "" > Seiten</p> 
+                <p>einfache Bildbearbeitung (20€): <input type="text" size="3" id="Privat_Bilder" value = "" > Bilder</p>
+                <p>Webdesign nach Vorlage (20€)<input type="radio" id="Privat_Vorlage" onclick="Vorlage();"></p> 
+                <p>Individuelles Layout (200€) <input type="radio" id="Privat_Individuelle" onclick="Individuelle();"></p> 
+                <p>Individuelles und Responsives Layout (400€)<input type="radio" id="Privat_Responsiv" onclick="Responsiv();"></p> 
+                <p>Hosting (20€/Monat)<input type="checkbox" id="Privat_Hosting"></p> 
+                <p>Domain (2€/Monat)<input type="checkbox" id="Privat_Domain"></p> 
+                <button onclick="Privat_Preis();">Berechnen</button>
+                <button onclick="Privat_Neu();">Neu</button>
+                <hr>
+                <br>
+                <p id="Privat_Ausgabe1"></p>
+                <p id="Privat_Ausgabe2"></p>
+                <br>
+            </div>
+
+            <div id="Pro">
+                <h2>Pro</h2>
+                <p>Seitenanzahl (10€): <input type="text" size="3" id="Pro_Seiten" value = "" > Seiten</p> 
+                <p>Bildbearbeitung (30€): <input type="text" size="3" id="Pro_Bilder" value = "" > Bilder</p>
+                <p>Individuelles Layout (200€)<input type="radio" id="Pro_Individuelle" onclick="Pro_Individuelle();" ></p> 
+                <p>Individuelles und Responsives Layout (400€)<input type="radio" id="Pro_Responsiv" onclick="Pro_Responsiv();"></p>
+                <p>Hosting (30€/Monat)<input type="checkbox" id="Pro_Hosting"></p>
+                <p>Domain (2€/Monat)<input type="checkbox" id="Pro_Domain"></p> 
+                <p>Web-Check, eine Analyse des Bestehenden (200€)<input type="checkbox" id="Pro_Analyse"></p> 
+                <p>Suchmaschienenoptimierung (200€)<input type="checkbox" id="Suche"></p>
+                <p>Content Mangement System (Einfach: Indexsuche und Sitemap für Unterseiten) (200€)<input type="checkbox" id="CMS"></p>
+                <p>Cross-Browser-Kompatibilität (50€):<input type="checkbox" id="Cross-Browser-Kompatibilit"></p>
+                <p>Individuelle Fehlerseite (404)</p>
+                <button onclick="Pro_Preis();">Berechnen</button>
+                <button onclick="Pro_Neu();">Neu</button>
+                <hr>
+                <br>
+                <p id="Pro_Ausgabe1"></p>
+                <p id="Pro_Ausgabe2"></p>
+                <br>
+            </div>
+        
+            <div id="Business">
+                <h2>Business</h2>
+                <p>Seitenanzahl (15€): <input type="text" size="3" id="Business_Seiten" value = "" > Seiten</p> 
+                <p>Bildbearbeitung (40€): <input type="text" size="3" id="Business_Bilder" value="">Bilder</p>
+                <p>Individuelles und Responsives Layout (500€)</p>
+                <p>Hosting (150€/Monat)<input type="checkbox" id="Business_Hosting"></p>
+                <p>Domain (10€/Monat)<input type="checkbox" id="Business_Domain"></p>
+                <p>Web-Check, eine Analyse des Bestehenden (250€)<input type="checkbox" id="Business_Analyse"></p> 
+                <p>Suchmaschienenoptimierung (300€)</p> 
+                <p>Content Mangement System (300€)</p>
+                <p>mit Viedeoplayer (20€)<input type="checkbox" id="Business_Viedeo"></p>
+                <p>mit Lexikon (20€)<input type="checkbox" id="Business_Lexikon"></p>
+                <p>Cross-Browser-Kompatibilität (150€)</p>
+                <p>Individuelle Fehlerseite (404)</p>
+                <p>Zusetzliche Frontend Fremdsprachen (400€):<input type="text" size="3" id="Business_Fremdsprache" value = "" ></p>
+                <p>Social Media (Facebook,Twitter) (100€/Monat)<input type="checkbox" id="Business_Social"></p>
+                <button onclick="Business_Preis();">Berechnen</button>
+                <button onclick="Business_Neu();">Neu</button>
+                <hr>
+                <br>
+                <p id="Business_Ausgabe1"></p>
+                <p id="Business_Ausgabe2"></p>
+                <br>
+            </div>
+
+            <div id="Enterprise">
+                <h2>Enterprise</h2>
+                <p>Seitenanzahl (15€): <input type="text" size="3" id="Enterprise_Seiten" value = "" > Seiten</p> 
+                <p>Bildbearbeitung (50€): <input type="text" size="3" id="Enterprise_Bilder" value = "" > Bilder</p>
+                <p>Individuelles und Responsives Layout (300€)</p>
+                <p>Hosting (200€/Monate)<input type="checkbox" id="Enterprise_Hosting"></p>
+                <p>Domain (20€/Monate)<input type="checkbox" id="Enterprise_Domain"></p>
+                <p>Web-Check, eine Analyse des Bestehenden (250€)<input type="checkbox" id="Enterprise_Analyse"></p> 
+                <p>Suchmaschienenoptimierung (300€)</p> 
+                <p>Content Mangement System (350€)</p>
+                <p>Cross-Browser-Kompatibilität (150€)</p>
+                <p>Individuelle Fehlerseite (404)</p>
+                <p>Zusetzliche Frontend Fremdsprachen (400€):<input type="text" size="3" id="Enterprise_Fremdsprache" value = "" ></p>
+                <p>Social Media (150€/Monate)</p>
+                <p>Youtube (1200€/Monate): <input type="checkbox" id="Enterprise_Youtube"></p>
+                <button onclick="Enterprise_Preis();">Berechnen</button>
+                <button onclick="Enterprise_Neu();">Neu</button>
+                <hr>
+                <br>
+                <p id="Enterprise_Ausgabe1"></p>
+                <p id="Enterprise_Ausgabe2"></p>
+                <br>
+            </div>
+        </div>
+    </body>
+</html>

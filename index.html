@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Think</title>
+	<meta charset="utf-8">
+	<link rel = "stylesheet" type = "text/css" href = "css/style.css">
+    <link rel = "stylesheet" type = "text/css" href = "css/menu.css">
+    <link rel = "stylesheet" type = "text/css" href = "css/home.css">
+    <script language = "javascript" type = "text/javascript" src = "js/lamp.js"></script>
+    <script language = "javascript" type = "text/javascript" src = "js/hint.js"></script>
+
+</head>
+
+<body onload = "load_lamp(); recommendation_generator();">
+    
+	
+    <h1>THINK</h1>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="html/Referenzen.html">Referenzen</a></li>
+        <li><a href="html/Angebot.html">Angebot</a></li>
+        <li><a href="html/Preise.html">Preise</a></li>
+        <li><a href="html/FAQ.html">FAQ</a></li>
+    </ul>
+
+	<div id = "website">
+       
+    <br>   
+    <h2>Denken sie mal dr&uuml;ber nach!</h2>    
+
+        <div id = "screen">
+           
+            <canvas id = "color" width = "640" height = "640" ></canvas>
+            <canvas id = "lamp"  width = "640" height = "640" onclick = "Change_Canvas_Color('color')" ></canvas>
+        
+        </div>
+
+    <h2>"THINK" die beste fiktive Werbeagentur der Welt</h2>
+    <p id = "hint"></p>
+    <br>
+
+	</div>
+
+</body>
+</html>
